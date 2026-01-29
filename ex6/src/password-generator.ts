@@ -1,0 +1,1 @@
+export default passwordGenerator(len = 6): string {};
