@@ -1,32 +1,26 @@
 export default function passwordGenerator(len: number = 6): string {
-    if(len < 6){
-       console.log('maximun length is 6'); 
-    };
+  if (len < 6) {
+    console.log('maximun length is 6');
+  };
 
-    if(len > 20){
-        console.log('minimum length is 20');
-    }
+  if (len > 20) {
+    console.log('minimum length is 20');
+  }
 
-const upper: string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  const upper: string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   const numbers: string = '0123456789';
   const special: string = '.!_"#$%&/()-';
   const allChars: string = upper + numbers + special;
 
-//   function getRandom(text: string): string | undefined{
-//     const posicion = Math.floor(Math.random() * text.length);
-//     return text[posicion];
-//   }
-
-
-  let password: string =  
+  let password: string =
     upper[Math.floor(Math.random() * upper.length)]!
-    numbers[Math.floor(Math.random() * numbers.length)]!
-    special[Math.floor(Math.random() * special.length)]!
+  numbers[Math.floor(Math.random() * numbers.length)]!
+  special[Math.floor(Math.random() * special.length)]!
 
 
-    for(let i = password.length; i < length; i++){
-        password += allChars[Math.floor(Math.random() * allChars.length)];
-    }
+  for (let i = password.length; i < length; i++) {
+    password += allChars[Math.floor(Math.random() * allChars.length)];
+  }
 
-return password;
+  return password;
 };
