@@ -137,3 +137,7 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Exercise folders that won't upload
+ex_ts/
+ex_ts_extra/
